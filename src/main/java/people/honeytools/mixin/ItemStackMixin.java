@@ -20,6 +20,7 @@ public abstract class ItemStackMixin implements FabricItemStack {
     public void AddSilkTouchToHoneyTool(ItemConvertible item, int count, CallbackInfo ci){
         if ((item != null) && (item.asItem() instanceof HoneyToolItem)){
             this.addEnchantment(Enchantments.SILK_TOUCH, 1);
+
         }
     }
 }

@@ -2,13 +2,13 @@ package people.honeytools;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ToolItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import people.honeytools.effect.HoneyToolsEffects;
 import people.honeytools.item.*;
 
 public class Honeytools implements ModInitializer {
@@ -34,5 +34,6 @@ public class Honeytools implements ModInitializer {
         Registry.register(Registries.ITEM, new Identifier("honeytools", "honey_shovel"), HONEY_SHOVEL);
         Registry.register(Registries.ITEM, new Identifier("honeytools", "honey_hoe"), HONEY_HOE);
 
+        HoneyToolsEffects.registerEffects();
     }
 }

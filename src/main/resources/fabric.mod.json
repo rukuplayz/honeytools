@@ -6,7 +6,7 @@
   "description": "Adds honey tools",
   "authors": [],
   "contact": {},
-  "license": "MIT",
+  "license": "ARR",
   "icon": "assets/honeytools/icon.png",
   "environment": "*",
   "entrypoints": {
