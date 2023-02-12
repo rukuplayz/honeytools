@@ -18,7 +18,7 @@ public class Honeytools implements ModInitializer {
     public static ToolItem HONEY_AXE = new HoneyAxeItem(Material.INSTANCE, 4, -2.8F, new Item.Settings());
     public static ToolItem HONEY_SHOVEL = new HoneyShovelItem(Material.INSTANCE, 2, -2.8F, new Item.Settings());
     public static ToolItem HONEY_HOE = new HoneyHoeItem(Material.INSTANCE, 1, -2.8F, new Item.Settings());
-
+    public static final String MOD_ID = "honeytools";
     @Override
     public void onInitialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
@@ -28,11 +28,11 @@ public class Honeytools implements ModInitializer {
             content.add(HONEY_SHOVEL);
             content.add(HONEY_HOE);
         });
-        Registry.register(Registries.ITEM, new Identifier("honeytools", "honey_pickaxe"), HONEY_PICKAXE);
-        Registry.register(Registries.ITEM, new Identifier("honeytools", "honey_sword"), HONEY_SWORD);
-        Registry.register(Registries.ITEM, new Identifier("honeytools", "honey_axe"), HONEY_AXE);
-        Registry.register(Registries.ITEM, new Identifier("honeytools", "honey_shovel"), HONEY_SHOVEL);
-        Registry.register(Registries.ITEM, new Identifier("honeytools", "honey_hoe"), HONEY_HOE);
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "honey_pickaxe"), HONEY_PICKAXE);
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "honey_sword"), HONEY_SWORD);
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "honey_axe"), HONEY_AXE);
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "honey_shovel"), HONEY_SHOVEL);
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "honey_hoe"), HONEY_HOE);
 
         HoneyToolsEffects.registerEffects();
     }
