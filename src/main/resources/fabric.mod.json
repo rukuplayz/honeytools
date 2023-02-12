@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "honeytools",
+  "version": "${version}",
+  "name": "Honeytools",
+  "description": "Adds honey tools",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/honeytools/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "people.honeytools.client.HoneytoolsClient"
+    ],
+    "main": [
+      "people.honeytools.Honeytools"
+    ]
+  },
+  "mixins": [
+    "honeytools.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
