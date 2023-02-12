@@ -10,9 +10,6 @@
   "icon": "assets/honeytools/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "people.honeytools.client.HoneytoolsClient"
-    ],
     "main": [
       "people.honeytools.Honeytools"
     ]
