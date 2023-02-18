@@ -4,7 +4,8 @@
   "package": "people.honeytools.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ItemStackMixin"
+    "ItemStackMixin",
+    "PlayerEntityMixin"
   ],
   "client": [
   ],

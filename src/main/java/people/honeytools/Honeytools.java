@@ -14,8 +14,8 @@ import people.honeytools.item.*;
 public class Honeytools implements ModInitializer {
 
     public static ToolItem HONEY_PICKAXE = new HoneyPickaxeItem(Material.INSTANCE, 2, -2.8F, new Item.Settings());
-    public static ToolItem HONEY_SWORD = new HoneySwordItem(Material.INSTANCE, 3, -2.0F, new Item.Settings());
-    public static ToolItem HONEY_AXE = new HoneyAxeItem(Material.INSTANCE, 4, -2.8F, new Item.Settings());
+    public static ToolItem HONEY_SWORD = new HoneySwordItem(Material.INSTANCE, 2, -2.0F, new Item.Settings());
+    public static ToolItem HONEY_AXE = new HoneyAxeItem(Material.INSTANCE, 4, -2.7F, new Item.Settings());
     public static ToolItem HONEY_SHOVEL = new HoneyShovelItem(Material.INSTANCE, 2, -2.8F, new Item.Settings());
     public static ToolItem HONEY_HOE = new HoneyHoeItem(Material.INSTANCE, 1, -2.8F, new Item.Settings());
     public static final String MOD_ID = "honeytools";
